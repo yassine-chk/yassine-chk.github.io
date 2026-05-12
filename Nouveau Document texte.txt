@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Chakir Yassine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-nom">
+            Chakir <span>Yassine</span>
+        </div>
+
+        <nav class="menu-navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#parcours">Parcours</a>
+            <a href="#projets">Projets</a>
+            <a href="#competences">Compétences</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section-accueil">
+        <h1>Bienvenue sur mon <span>Portfolio</span></h1>
+        <h2>Je suis <span>étudiant</span></h2>
+
+        <p>
+            Étudiant en BTS SIO option SISR,
+            spécialisé en systèmes et réseaux.
+        </p>
+
+        <div class="zone-boutons">
+            <a href="#contact">Me contacter</a>
+            <a href="#parcours">Mon parcours</a>
+        </div>
+    </section>
+
+    <section id="parcours" class="section-contenu">
+        <h2>Mon parcours scolaire</h2>
+
+        <ul>
+            <li>2024 - 2026 : BTS SIO option SISR</li>
+            <li>2023 - 2024 : Première année de BTS SIO SISR</li>
+            <li>2023 : Baccalauréat Scientifique</li>
+        </ul>
+    </section>
+
+    <section id="projets" class="section-contenu">
+        <h2>Mes projets</h2>
+
+        <ul>
+            <li>Serveur Windows</li>
+            <li>Réseau local</li>
+            <li>Machines virtuelles</li>
+        </ul>
+    </section>
+
+    <section id="competences" class="section-contenu">
+        <h2>Mes compétences</h2>
+
+        <ul>
+            <li>Windows / Linux</li>
+            <li>TCP/IP, VLAN, DHCP, DNS</li>
+            <li>Virtualisation</li>
+            <li>Administration système et réseau</li>
+        </ul>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <h2>Mes certifications</h2>
+
+        <div class="grille-certifs">
+
+            <div class="carte-certif">
+                <img src="images/anssi.png" alt="Certification ANSSI">
+                <h3>Certification ANSSI</h3>
+                <p>Formation de sensibilisation à la cybersécurité.</p>
+            </div>
+
+            <div class="carte-certif">
+                <img src="images/cisco.png" alt="Certification Cisco">
+                <h3>Certification Cisco</h3>
+                <p>Compétences de base en réseau et en infrastructure.</p>
+            </div>
+
+            <div class="carte-certif">
+                <img src="images/pix.png" alt="Certification Pix">
+                <h3>Certification Pix</h3>
+                <p>Évaluation et validation des compétences numériques.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section-contenu">
+        <h2>Me contacter</h2>
+
+        <form action="mailto:chakiryassinechk7@email.com" method="post" enctype="text/plain" class="formulaire-contact">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
