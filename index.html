@@ -241,7 +241,7 @@ Organisation réseau
 Le réseau comprend 24 VLANs, un plan d'adressage complet, et le routage est assuré entre les différents équipements avec du NAT vers Internet. Avant tout déploiement physique, l'infrastructure a été simulée sur Cisco Packet Tracer afin de valider le plan d'adressage et le fonctionnement global.
 
 Répartition des tâches
-Bien que chaque membre ait participé à toutes les étapes du projet, nous nous sommes réparti des responsabilités principales pour avancer efficacement. Pour ma part, je me suis concentré sur la configuration des services et des serveurs. J'ai pris en charge la mise en place du serveur LAP avec les services NextCloud, GLPI et LogAnalyzer, le déploiement de la base de données avec une réplication entre deux instances pour assurer la redondance, ainsi que la mise en œuvre d'une solution de haute disponibilité (HA) au niveau du LAP pour garantir la continuité de service.
+Bien que chaque membre ait participé à toutes les étapes du projet, nous nous sommes réparti des responsabilités principales pour avancer efficacement. Sur Proxmox, je me suis concentré sur la mise en place du serveur LAP hébergeant les services NextCloud et GLPI, le déploiement de la base de données avec une réplication entre deux instances pour assurer la redondance, ainsi que la mise en œuvre d'une solution de haute disponibilité (HA) au niveau du LAP. J'ai également configuré le DNS sur Windows Server pour le domaine intranet, en assurant la résolution des différents services que j'avais mis en place.
 
 Organisation de l'équipe
 Nous avons utilisé Notion dès le début du projet pour organiser et suivre l'avancement des tâches. Toute la documentation (schéma réseau, plan d'adressage, fiches de flux) a été maintenue à jour en continu sur Google Drive tout au long du projet.
@@ -249,7 +249,7 @@ Nous avons utilisé Notion dès le début du projet pour organiser et suivre l'a
 
             </p>
 			<img src="images/shema.png" alt="shema" class="popup-img">
-        </div>
+			<img src="images/shema2.png" alt="shema" class="popup-img">
     </div>
 
     <!-- ===== POPUP PROJET 2 ===== -->
