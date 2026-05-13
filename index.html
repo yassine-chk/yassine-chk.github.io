@@ -234,16 +234,19 @@ Projet réalisé en équipe de 3 · BTS SIO SISR · 2026
 		Contexte
 Ce projet a été réalisé dans le cadre de notre formation BTS SIO option SISR. En groupe de 3, nous avons conçu et déployé une infrastructure réseau complète depuis zéro. Les tâches ont été réparties entre les membres de l'équipe et coordonnées via Notion, avec un espace partagé sur Google Drive pour centraliser toute la documentation.
 
-Infrastructure mise en place
+Infrastructure mise en place:
 L'infrastructure repose sur du matériel physique : un routeur Cisco, un pare-feu Stormshield, un switch de niveau 3 et un switch de niveau 2, ainsi qu'un serveur HP ProLiant configuré en RAID 5. Sur ce serveur, nous avons déployé l'hyperviseur Proxmox hébergeant plusieurs machines virtuelles : OPNsense (pare-feu interne), Windows Server (Active Directory & DNS), des serveurs applicatifs (GLPI, NextCloud, LogAnalyzer), une base de données répliquée, un serveur de journalisation Rsyslog et un poste d'administration sous Fedora.
 
-Organisation réseau
+
+Organisation réseau:
 Le réseau comprend 24 VLANs, un plan d'adressage complet, et le routage est assuré entre les différents équipements avec du NAT vers Internet. Avant tout déploiement physique, l'infrastructure a été simulée sur Cisco Packet Tracer afin de valider le plan d'adressage et le fonctionnement global.
 
-Répartition des tâches
+
+Répartition des tâches:
 Bien que chaque membre ait participé à toutes les étapes du projet, nous nous sommes réparti des responsabilités principales pour avancer efficacement. Pour ma part, je me suis concentré sur la configuration des services et des serveurs. J'ai pris en charge la mise en place du serveur LAP avec les services NextCloud, GLPI et LogAnalyzer, le déploiement de la base de données avec une réplication entre deux instances pour assurer la redondance, ainsi que la mise en œuvre d'une solution de haute disponibilité (HA) au niveau du LAP pour garantir la continuité de service.
 
-Répartition des tâches
+
+Répartition des tâches:
 Bien que chaque membre ait participé à toutes les étapes du projet, nous nous sommes réparti des responsabilités principales pour avancer efficacement. Sur Proxmox, je me suis concentré sur la mise en place du serveur LAP hébergeant les services NextCloud et GLPI, le déploiement de la base de données avec une réplication entre deux instances pour assurer la redondance, ainsi que la mise en œuvre d'une solution de haute disponibilité (HA) au niveau du LAP. J'ai également configuré le DNS sur Windows Server pour le domaine intranet, en assurant la résolution des différents services que j'avais mis en place.
 
 
