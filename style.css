@@ -396,3 +396,14 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
+.carte-certif a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.carte-certif:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
